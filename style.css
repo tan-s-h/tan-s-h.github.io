@@ -1,0 +1,946 @@
+/*-----------------------------------------------------------------*/
+		html {
+		    color: #111;
+		    background: #fff;
+		}
+		body{
+			padding-top: 30px;
+			margin: 0;
+			font: 12px Helvetica,Arial,sans-serif;
+			line-height: 1.62;
+		}
+		div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, fieldset, input, button{
+		    margin: 0;
+		    padding: 0;
+		}
+		a img {
+		    border-width: 0;
+		    vertical-align: middle;
+		}		
+		input {
+			font-size: 12px;
+		}
+		a:visited {
+		    color: #669;
+		    text-decoration: none;
+		}
+		a:link {
+		    color: #37a;
+		    text-decoration: none;
+		}
+		a:hover{
+			color:#fff;
+			text-decoration: none;
+			background-color: #37a;
+		}
+		a {
+		    cursor: pointer;
+		}
+		ul{
+			margin:0px;
+			padding:0px;
+			list-style-type: none;
+		}
+		form {
+		    margin: 0;
+		    padding: 0;
+		    border: 0px;
+		}
+		h2 {
+		    font: 15px Arial, Helvetica, sans-serif;
+		    color: #072;
+		    margin: 0 0 12px 0;
+		    line-height: 150%;
+		}
+
+		.section {
+		    padding: 10px 0;
+		    margin-bottom: 30px;
+		    min-height: 200px;
+		}
+/*-----------------------------------------------------------------*/
+
+
+/*<!-- new --><!-- new --><!-- new --><!-- new --><!-- new --><!-- new -->*/
+		#douban-head{
+			width: 950px;
+			margin: 0px auto 25px;
+			position: relative;
+		}
+		#douban-head h1{
+			display: block;
+		}
+		.douban-head-top{
+			position:absolute; left:0; top:0;
+			width: 160px;
+			height: 34px;
+			padding: 0;
+			margin: 0 20px 0 0;
+			background: url(images/douban_logo.png) no-repeat 0 0;
+		}
+		.douban-head-search{
+			position: relative;
+			/*vertical-align: middle;*/
+			margin: 0 0 0 170px;
+			width: 270px;
+			height: 30px;
+			border: 1px solid #c3c3c3;
+		}
+		.douban-head-search .search-down input{
+			width: 240px;
+			border: none;
+			font-size: 13px;
+			height: 20px;
+			padding: 5px;
+		}
+		.douban-head-search .search-up{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 30px;
+			height: 30px;
+			background: url(images/search_logo.png) no-repeat 50% 50%;
+		}
+		.douban-head-search .search-up input{
+			border: none;
+			background: transparent;
+			overflow: hidden;
+			width: 30px;
+			height: 30px;
+			font-size: 0;
+		/*	color: transparent;
+			cursor: pointer;*/
+		}
+		.douban-head-link{ 
+			position:absolute; right:0; top:0;
+			margin-top: 6px;
+		}		
+		.douban-head-link ul{
+			margin: 0 0;
+		}
+		.douban-head-link li{
+			display: inline-block;
+			zoom: 1;
+			margin: 0 0 0 17px;
+		}
+		.douban-head-link li a{
+			display: inline-block;
+			zoom: 1;
+			width: 40px;
+			height: 20px;
+			/*overflow: hidden;*/
+			vertical-align: middle;
+			background: url(images/douban_head_link_logo.png) no-repeat 100% 100%;
+		}
+
+		.douban-head-link .link-book{background-position: 0px 0;	
+		}
+		.douban-head-link .link-movie{background-position: -60px 0;	
+		}
+		.douban-head-link .link-music{background-position: -120px 0;
+		}
+		.douban-head-link .link-group{background-position: -180px 0;	
+		}
+		.douban-head-link .link-events{background-position: -299px 0;	
+		}
+		.douban-head-link .link-fm{background-position: -241px 0;	
+		}
+		.douban-head-link .link-things{background-position: -359px 0;
+		}
+		.douban-head-link .link-market{background-position: -421px 0;
+		}
+/*<!-- new --><!-- new --><!-- new --><!-- new --><!-- new --><!-- new -->*/
+
+		
+/*<!-- new --><!-- new --><!-- new --><!-- new --><!-- new --><!-- new -->*/
+		#douban-new{
+			margin-bottom: 25px;
+			background: url(images/doubanapp4_bg.png) no-repeat;
+			background-position: top right;
+			background-color: #f1faf1;
+		}
+		.new-main{
+			width: 950px;
+			height: 180px;                          
+			margin: 0 auto;
+			padding: 28px 0 4px;
+			position: relative;
+			overflow: visible;
+			zoom: 1;
+			  /*position: absolute;
+			  top: 0;
+			  bottom: 0; 
+			  left: 0;
+			  right: 0;*/
+			background: url(images/doubanapp4.png) no-repeat left top;
+		}
+		.login{
+			/*position:relative;*/
+			z-index: 2;
+			width: 270px;
+			float: right;
+			margin-bottom: 15px;
+			font-size: 0;
+		}
+		.app{
+			z-index: 2;
+			height: 120px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto 0 auto 430px;
+		}
+
+		.app .app-title{      
+			margin: 7px 0;
+		    font-size: 25px;
+		    color: #111;
+		    font-weight: bold;
+		    line-height: 24px;
+			
+		}
+		.app-title span{
+
+			color: #111;
+			margin-left: 10px;
+			font-weight: 100;
+		}
+		.app-slogan{
+			content: "";
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 18px;
+			font-size: 12px;
+			color: #111;
+			text-align: justify;
+		}
+		.app .app-link {
+			display: inline-block;
+			zoom: 1;
+			padding: 9px 21px;
+			margin-right: 2px;
+			vertical-align: top;
+			border-radius: 2px;
+			font-size: 12px;
+			background: #00B51D;
+			color: #FFF;
+			line-height: 1;
+		}
+		.app-download{
+			display: inline-block;
+		    zoom: 1;
+		    position: relative;
+		}
+		.download-link{
+			display: inline-block;
+			zoom: 1;
+			border: 1px solid #48aa0d;
+			border-radius: 2px;
+		}
+		.app-download-expand{
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 20px 20px 5px;
+			border: 1px solid #4a480d;
+			border-radius: 2px;
+			text-align: center;
+			font-size: 13px;
+			color: #666;
+			background: #fff;
+			line-height: 13px;
+			white-space: nowrap;
+		}
+		#douban-new-form fieldset {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		#douban-new-form .item{
+			vertical-align: top;
+			text-align: left;
+			font-size: 0;
+			letter-spacing: normal;
+			word-spacing: normal;
+			position: relative;
+			margin-bottom: 4px;
+		}
+		#douban-new-form .item .inp {
+			border: 1px solid #DBE5DB;
+			border-radius: 2px;
+			width: 252px;
+			padding: 0 8px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.item.item-passwd {
+			position: relative;
+			border: 1px solid #DBE5DB !important;
+			border-radius: 2px;
+			background: #fff;
+			width: 268px;
+		}
+		.item.item-passwd input {
+			border: 0;
+			width: 220px;
+		}
+		.item.item-passwd .opt {
+			position: absolute;
+			top: 0;
+			right: 10px;
+			font-size: 12px;
+			line-height: 35px;
+		}
+		.item.item-passwd .opt {
+			position: absolute;
+			top: 0;
+			right: 10px;
+			font-size: 12px;
+			line-height: 35px;
+		}
+		.item.item-submit {
+			margin-top: 6px;
+		}
+		.login .bn-submit {
+			-webkit-appearance: none;
+			padding: 0 22px;
+			margin-right: 0;
+			height: 30px;
+			font-size: 12px;
+			border: none;
+			border-radius: 2px;
+			cursor: pointer;
+			background: #30A080;
+			border-color: #30A080;
+			color: #fff;
+			width: 89px;
+			box-sizing: content-box;
+		}
+		.login .lnk-reg {
+			display: inline-block;
+			zoom: 1;
+			padding: 8px 21px 7px;
+			vertical-align: top;
+			border-radius: 2px;
+			border: 1px solid #30A080;
+			font-size: 12px;
+			color: #30A080;
+			line-height: 1;
+			width: 89px;
+			text-align: center;
+			margin-left: 4px;
+		}
+		.login .item-action {
+			font-size: 12px;
+			margin-top: 8px;
+			overflow: hidden;
+			color: #666;
+		}
+		.login .item-action-third {
+			float: right;
+			font-size: 0;
+			margin-top: 3px;
+			margin-right: 4px;
+		}
+		.login .item-action-third li {
+			display: inline-block;
+		}
+/*<!-- new --><!-- new --><!-- new --><!-- new --><!-- new --><!-- new -->*/
+
+
+/*<!-- hot --><!-- hot --><!-- hot --><!-- hot --><!-- hot --><!-- hot -->*/
+		#douban-hot{
+			width: 950px;
+			margin: 0 auto;
+		}
+		#douban-hot .side{
+			float: right;
+			width: 265px;
+			margin-left: 30px;
+		}
+		#douban-hot .main{
+			overflow: hidden;
+			zoom: 1;
+		}
+		#douban-hot .main .albums{
+			float:left;
+			width: 355px;
+			margin-right: 25px;
+			color: #999;
+		}
+		#douban-hot .main .notes{
+			overflow: hidden;
+			zoom: 1;
+			color: #666;
+		}
+		#douban-hot .albums ul{
+			margin: -10px 0 0 -10px;
+		}
+		#douban-hot .albums li{
+			display: inline-block;
+			width:170px;
+			/*zoom: 1;*/
+			letter-spacing: normal;
+			word-spacing: normal;
+		/*	vertical-align: top;*/
+			font-size:12px;
+			margin:10px 0 0 10px;
+		}
+		#douban-hot .albums .pic{
+			display:inline-block;
+			width:170px;
+			max-height:170px;
+			/*overflow: hidden;
+			zoom: 1;*/
+			vertical-align: middle;
+			white-space: nowrap;
+		}
+		/*#douban-hot .albums .pic img {
+		  width: 170px;
+		}*/		
+		#douban-hot .notes li{
+			margin-bottom:10px;
+			word-wrap:break-word;
+		}
+		#douban-hot .notes .author {
+		    color: #999;
+		}
+		#douban-hot .side .side-top{
+			margin:10px 0px;
+		}
+		#douban-hot .side .online li {
+		    margin-top: 10px;
+		    color: #999;
+		}
+		#douban-hot .side .online a{
+			display: block;
+			margin-bottom: 5px;
+			line-height: 1.5;
+		}
+/*<!-- hot --><!-- hot --><!-- hot --><!-- hot --><!-- hot --><!-- hot -->*/
+
+
+/*<!-- movie --><!-- movie --><!-- movie --><!-- movie --><!-- movie -->*/
+		#douban-movie ,#douban-book ,#douban-market ,#douban-events{
+		  padding: 40px 0 20px;
+		  margin-bottom: 30px;
+		  background: #f7f7f7;
+		}
+		.movie-list{
+			margin-bottom: 30px;
+		}
+		.wrap{
+			zoom:1;
+			width: 950px;
+			margin: 0 auto;
+		}
+/*<!-- wrap --><!-- wrap --><!-- wrap --><!-- wrap --><!-- wrap -->*/
+		.side-right{
+			float:right;
+			width:265px;
+			margin-left:30px;
+		}
+		.main{
+			overflow:hidden;
+			zoom:1;
+		}
+		.side-left{
+			float:left;
+			width:100px;
+			margin-right:20px;
+		}
+		.side-left h2 a{
+		    font-size: 24px;
+		    color: #27a;
+		}
+		.side-left .left-links li{
+			position: relative;
+			margin-top: 5px;
+			font-size: 14px;
+		}
+
+		.side-right .mod , .mod{
+			margin-bottom: 30px;
+			width: auto;
+		}
+		.side-right .right-list li{
+			display: inline-block;
+			zoom: 1;
+			font-size: 12px;
+			letter-spacing: normal;
+			word-spacing: normal;
+		}
+		#douban-movie .side-right .right-list li{
+			width: 4em;
+			margin-top: 4px;
+			text-align: left;
+		}
+		.side-right .right-nav li{
+			padding-bottom: 5px;
+			border-bottom: 1px solid #eaeaea;
+			margin-bottom: 6px;
+			list-style-type: decimal;
+			list-style-position: inside;
+		}
+		.side-right .right-nav li a{
+			margin-left: 5px;
+		}
+		.main .movie-list ul , .main .book-list ul , .main .music-list ul , .main .hot-list ul , .main .product-list ul , .main .events-list ul{
+			margin-top: -40px; 
+		}
+		.main .movie-list ul li , .main .book-list ul li , .main .music-list ul li , .main .hot-list ul li ,.main .product-list ul li , .main .events-list ul li{
+		    display: inline-block;
+		    zoom: 1;
+		    width: 24.8%;
+		    margin-top: 40px;
+		    vertical-align: top;
+		    text-align: center;
+		    font-size: 12px;
+		    letter-spacing: normal;
+		    word-spacing: normal;
+		}
+		.movie-list .pic , .book-list .pic{
+			height: 145px;
+			margin-bottom: 10px;
+		}
+		.movie-list .title , .book-list .title , .music-list .title , .product-list .title ,.events-list .title{
+			line-height: 1.45;
+			margin-top: 4px;
+		    font-size: 13px;
+		    word-wrap: break-word;
+		}
+		.movie-list .grade , .book-list .author , .music-list .grade{
+			margin:4px;
+		}
+		.grade .stars0, .grade .stars1, .grade .stars2, .grade .stars3, .grade .stars4, .grade .stars5, .grade .stars6, .grade .stars7, .grade .stars8, .grade .stars9, .grade .stars10 {
+			display: inline-block;
+			zoom: 1;
+			background: url(images/stars.png) 0 0 no-repeat;
+			width: 55px;
+			height: 11px;
+			margin: 0 3px 0 0;
+		}
+		.grade .stars4{
+			background-position: 0 -66px;
+		}
+		.grade .stars6{
+			background-position: 0 -44px;
+		}
+		.grade .stars7{
+			background-position: 0 -33px;
+		}
+		.grade .stars8{
+			background-position: 0 -22px;
+		}
+		.grade i{
+			margin-left: 4px;
+			color:#e09015;
+		}
+		.movie-list .shop-ticket{
+			display: inline-block;
+			background-color: #1c8bd0;
+			color: #fff;
+			vertical-align: middle;
+			padding: 2px 10px;
+			border-radius: 2px;
+		}
+/*<!-- movie --><!-- movie --><!-- movie --><!-- movie --><!-- movie -->*/
+
+
+/*<!-- group --><!-- group --><!-- group --><!-- group --><!-- group --><!-- group -->*/
+		#douban-group{
+			padding: 10px 0;
+			margin-bottom: 30px;
+			min-height: 200px;
+		}
+		#douban-group a:link, #douban-group a:visited {
+		    color: #017a85;
+		}
+		#douban-group .side-right .mod li{
+			margin-bottom: 10px;
+			zoom: 1;
+			display: inline-block;
+		}
+		#douban-group .mod .little-title{
+			display: inline-block;
+			margin: 0px 0 2px;
+			font-size: 14px;
+			color: #333;
+		}
+		#douban-group .mod .right-list li{
+			display: inline-block;
+			zoom: 1;
+			margin: 0 10px 0 0;
+			/*width: 34px;*/
+		}
+		#douban-group .main .group-list ul{
+			margin: -30px 0 0 -30px;
+		}
+		#douban-group .main .group-list li{
+			display: inline-block;
+			width: 248px;
+			margin: 30px 0 0 30px;
+			text-align: left;
+			overflow: hidden;
+			zoom: 1;
+			color: #999;
+		}
+		#douban-group .group-list .pic{
+			float: left;
+		    margin: 0 15px 10px 0;
+		}
+		#douban-group .group-list .note{
+			overflow: hidden;
+			zoom: 1;
+		}
+		#douban-group .group-list .title{
+			margin-bottom: 5px;
+			line-height: 1.45;
+			font-size: 13px;
+		}
+/*<!-- group --><!-- group --><!-- group --><!-- group --><!-- group --><!-- group -->*/
+
+
+/*<!-- book --><!-- book --><!-- book --><!-- book --><!-- book --><!-- book -->*/
+		#douban-book a:link, #douban-book a:visited{
+			color: #4a2f14;
+		}
+		#douban-book .book-list .pic {
+		    height: 148px;
+		    overflow: hidden;
+		}
+		#douban-book .book-list .pic img {
+		    width: 100px;
+		}
+		#douban-book .book-list .free-read{
+			display: inline-block;
+			zoom: 1;
+			vertical-align: middle;
+			color: #fff;
+			background-color: #999a95;
+			padding: 2px 10px;
+			border-radius: 2px;
+		}
+		#douban-book .book-list .price {
+		    height: 19px;
+		    margin-bottom: 4px;
+		    color: #666;
+		}
+		#douban-book .side-right .right-list {
+		    overflow: hidden;
+		    margin-top: -10px;
+		    padding-top: 10px;
+		    margin: -1px 0 10px 0;
+		    border-top: 1px solid #eaeaea;
+		}
+		#douban-book .right-list li{
+		    width: auto;
+			margin-left: 10px;
+		}
+		#douban-book .side-right .little-title{
+			font-size: 12px;
+			color: #999;
+		}
+/*<!-- book --><!-- book --><!-- book --><!-- book --><!-- book --><!-- book -->*/
+
+
+/*<!-- music --><!-- music --><!-- music --><!-- music --><!-- music --><!-- music -->*/		
+		#douban-music a:link , #douban-music a:visited{
+			color: #555d53;
+		} 
+		#douban-music .side-right .artist-list li{
+			padding-bottom: 8px;
+			margin-bottom: 8px;
+		}
+		#douban-music .artist-list .pic , #douban-music .artist-list span{
+			float: left;
+		    max-height: 61px;
+		    overflow: hidden;
+		    margin-right: 10px;
+		}
+		#douban-music .artist-list .content{
+			overflow: hidden;
+			zoom: 1;
+		}
+		#douban-music .artist-list .content div{
+			margin-top: 4px;
+			color: #999;
+		}
+		#douban-music .main .music-list , #douban-music .main .hot-list{
+		    margin-bottom: 20px;
+		    font-size: 0;
+		    letter-spacing: -.31em;
+		}
+		#douban-music .main .pic{
+			height: 80px;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+		#douban-music .music-list .title , #douban-music .hot-list .title {
+		    font-size: 12px;
+		    color: #666;
+		    line-height: 1.45;
+    		margin-bottom: 4px;
+   			word-wrap: break-word;
+		}
+		#douban-music .hot-list .pic img{
+			width: 80px;
+		}
+/*<!-- music --><!-- music --><!-- music --><!-- music --><!-- music --><!-- music -->*/		
+
+
+/*<!-- market --><!-- market --><!-- market --><!-- market --><!-- market -->*/
+		#douban-market a:link, #douban-market a:visited {
+		    color: #37a;
+		}
+		#douban-market .side-left li a:link, #douban-market .side-left li a:visited {
+		    color: #343434;
+		}
+		#douban-market .side-right .shop-list{
+			margin-top: 10px;
+			width: 280px;
+		}
+		#douban-market .side-right .shop-list ul{
+			margin-top: 20px;
+		}
+		#douban-market .side-right .shop-list ul li{
+			/*overflow: hidden;*/
+			margin: 2px 0 10px;
+			color: #666;
+			height: 64px;
+			font-size: 12px;
+			line-height: 20px;
+		}
+		#douban-market .shop-list .pic {
+		    float: left;
+		   /* margin-left: 0;*/
+		   /* height: 64px;*/
+		}
+		#douban-market .shop-list .pic img{
+			width: 60px;
+		    overflow: hidden;
+		}
+		#douban-market .shop-list .content{
+		    padding-left: 75px;
+		}
+		#douban-market .shop-list .content a{
+		    display: inline-block;
+		    font-size: 13px;			
+			height: 25px;
+		}
+		#douban-market .main .product-list{
+			letter-spacing: 0;
+			margin-bottom: 20px;
+		}
+		#douban-market .product-list .main-pro{
+			float: left;
+			width: 250px;
+			margin: 10px 20px 10px 0;
+		}
+		#douban-market .main-pro .pic{
+			margin-bottom: 0;
+		    height: 250px;
+		    overflow: hidden;
+		}
+		#douban-market .main-pro .pic img{
+			width: 250px;
+			height: 250px;
+		}
+		#douban-market .main-pro .note{
+			display: block;
+	        overflow: hidden;
+			/*margin-bottom: 0;*/
+		    font-size: 14px;
+		    padding: 5px 0;
+		   /* width: 100%;
+	        height: 100%;*/	        
+		}
+		#douban-market .main-pro .note .title {
+		    float: left;
+		    font-size: 14px;
+		    max-width: 78%;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		}
+		#douban-market .main-pro .note .price {
+		    float: right;
+		    color: #6a6a6a;
+		    font-size: 13px;
+		    text-align: right;
+		    width: 22%;
+		}
+		#douban-market .product-list .other-pro{
+			float: left;
+			height: 285px;
+			width: 260px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		#douban-market .product-list .other-pro li{
+			margin: 15px 20px 0 0;
+			float: left;		
+			height: 125px;
+			width: 110px;
+		}
+		#douban-market .product-list .other-pro .other-top{
+			margin-top: 40px;
+		}
+		#douban-market .other-pro .pic{
+			overflow: hidden;
+			margin-bottom: 0px;
+			height: 110px;
+		}
+		#douban-market .other-pro .pic img{
+			width: 110px;
+			height: 110px;
+		}
+		#douban-market .other-pro .title{
+			display: inline-block;
+		    overflow: hidden;
+		    font-size: 12px;
+		    margin-top: 5px;
+			height: 12px;
+		    line-height: 12px;
+		    max-width: 100%;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+/*<!-- market --><!-- market --><!-- market --><!-- market --><!-- market -->*/
+
+
+/*<!-- photo --><!-- photo --><!-- photo --><!-- photo --><!-- photo --><!-- photo -->*/
+		#douban-photo a:link, #douban-photo a:visited {
+		    color: #837960;
+		}
+		#douban-photo .side-left h2 a:link, #douban-photo .side-left a:visited {
+		    color: #f66;
+		}
+		#douban-photo .side-right .right-list {
+		    padding-bottom: 10px;
+		    margin-bottom: 10px;
+		    border-bottom: 1px solid #ddd;
+		}
+		#douban-photo .side-right .right-list .title{
+			font-size: 14px;
+			color: #999;
+		}
+		#douban-photo .side-right .right-list li{
+			display: inline-block;
+			zoom: 1;
+			vertical-align: middle;
+			width: 4em;
+			margin-top: 5px;
+		}
+		#douban-photo .main .mod{
+			margin-bottom: 15px;
+		}
+		#douban-photo .main .photo-list ul{
+			margin-left: -2%;
+			font-size: 0;
+		    /*letter-spacing: -.31em;*/
+		}
+		#douban-photo .main .photo-list li {
+		    width: 48%;		    
+		    margin: 0 0 2% 2%;  
+		    display: inline-block;
+		    zoom: 1;
+		    vertical-align: top;
+		  
+		}
+		#douban-photo .main .photo-list .pic{
+			position: relative;
+			    margin-bottom: 5px;
+			    padding-bottom: 70%;
+			
+		}
+		#douban-photo .main .photo-list .pic img{
+			position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    max-height: 180px;
+		}
+		#douban-photo .main .photo-list .title{
+			    font-size: 14px
+		}
+/*<!-- photo --><!-- photo --><!-- photo --><!-- photo --><!-- photo --><!-- photo -->*/
+
+
+/*<!-- events --><!-- events --><!-- events --><!-- events --><!-- events --><!-- events -->*/
+		#douban-events a:link, #douban-events a:visited {
+		    color: #643;
+		}
+		#douban-events .side-left h2 a:link, #douban-events .side-left h2 a:visited {
+		    color: #ec5303;
+		}		
+		#douban-events .side-right .right-list ul{
+			margin-left: -10px;
+			margin-bottom: 10px;
+		}
+		#douban-events .right-list .little-title{
+			width: 100%;
+		    margin-bottom: 2px;
+		    font-size: 14px;
+		}
+		#douban-events .little-title a{
+			color: #333;
+		}
+		#douban-events .right-list li{
+			display: inline-block;
+			zoom: 1;
+			margin-left: 10px;
+		}
+
+		/*.list {
+		    font-size: 0;
+		    letter-spacing: -.31em;
+		}*/
+
+		#douban-events .main .events-list ul{
+			margin-left: -20px;
+			 font-size: 0;
+		}
+		#douban-events .main .events-list li {
+		    width: 248px;
+		    margin-left: 20px;
+		    text-align: left;
+		    overflow: hidden;
+		    zoom: 1;
+		}
+		#douban-events .events-list .pic{
+			float: left;
+			margin: 0 10px 10px 0;			
+		}
+		#douban-events .events-list .pic img{
+			width: 70px;
+		}
+		#douban-events .events-list .content{
+			overflow: hidden;
+		    zoom: 1;
+		    color: #666;
+		}
+/*<!-- events --><!-- events --><!-- events --><!-- events --><!-- events --><!-- events -->*/
+
+
+/*<!-- footer --><!-- footer --><!-- footer --><!-- footer --><!-- footer --><!-- footer -->*/
+		#footer{
+		    overflow: hidden;
+		    zoom: 1;
+		    width: 950px;
+		    padding: 14px 0;
+		    margin-top: 30px;
+		    border-top: 1px dashed #dcdcdc;
+		    color: #999;
+		}
+		#footer .left {
+		    float: left;
+		}
+		#footer .right {
+		    float: right;
+		}
+/*<!-- footer --><!-- footer --><!-- footer --><!-- footer --><!-- footer --><!-- footer -->*/
+
+
